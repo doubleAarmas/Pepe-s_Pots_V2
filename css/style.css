@@ -36,10 +36,6 @@ p {
     margin: 15px 0 20px 0;
 }
 
-.section-p1 {
-padding: 40px 80px;
-}
-
 .section-m1 {
     margin: 40px 0;
 }
@@ -57,55 +53,76 @@ body {
     display: none;
 }
 
-/* Home Page formatting starts here */
+/* Hero Section formatting starts here */
 
-#hero{
-    /* change background image once selected */
+.hero__section{
     background-color: lightgray;
-    /* background-image: url(/Public/images/icons8-forest-96.png); */
-    height: 90vh;
+    height: 75vh;
     width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0%;
-    padding: 0 80px;
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 }
 
-#hero h4{
-    padding-bottom: 15px;
+.hero__text--container{
+width: 25rem;
+height: 50vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
-#hero h1 {
+.hero__content--header {
     color: #088178;
 }
 
-#hero button{
-    /* issues with sizing the button due to background. ask if he would like to remove it */
-    background-image: url(../images/button-background.png);
-    background-color: transparent;
-    color: #088178;
-    border: 0;
-    padding: 40px 30px 15px 80px;
-    background-repeat: no-repeat;
+.hero__content--text {
+    font-weight: 600;
+}
+
+.hero__section--button {
+    /* background-image: url(/Assets/images/button-background.png);
+    background-color: transparent; */
+    color: black;
     cursor: pointer;
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 700;
-    
+    background-color: #34A56F;
+    border-radius: 22px;
+    width: 10vw;
+}
+
+.hero__section--button:hover {
+    opacity: .6;
+    transition: 1s;
+}
+
+/* temporary background image */
+.hero__section--image {
+background-image: url(/Assets/images/Planted.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 800px;
+    bottom: 80px;
+    width: 40vw;
+    height: 50vh;
+    object-fit: fill;
 }
 
 /* Features begin */
 
-#feature{
+.feature__section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #34A56F;
 }
 
-#feature .feature-box {
+.feature__box {
     width: 150px;
     text-align: center;
     padding: 40px 25px;
@@ -115,16 +132,16 @@ body {
     margin: 15px 0;
 }
 
-#feature .feature-box:hover {
+.feature__box:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }
 
-#feature .feature-box img {
+.feature__section .feature-box img {
     width: 100%;
     margin-bottom: 10px;
 }
 
-#feature .feature-box h6 {
+.feature__section .feature-box h6 {
     padding: 9px 8px 6px 8px;
     display: inline-block;
     line-height: 1;
@@ -133,19 +150,19 @@ body {
     background-color: #fddde4;
 }
 
-#feature .feature-box:nth-child(2) h6{
+.feature__section .feature-box:nth-child(2) h6{
     background-color: #cdebbc;
 }
 
-#feature .feature-box:nth-child(3) h6{
+.feature__section .feature-box:nth-child(3) h6{
     background-color: #d1e8f2;
 }
 
-#feature .feature-box:nth-child(4) h6{
+.feature__section .feature-box:nth-child(4) h6{
     background-color: #cdd4f8;
 }
 
-#feature .feature-box:nth-child(5) h6{
+.feature__section .feature-box:nth-child(5) h6{
     background-color: #fff2e5;
 }
 
